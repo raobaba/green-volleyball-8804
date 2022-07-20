@@ -33,7 +33,11 @@
           <div>Cruises</div>
         </div>
         <div class="search_box_second">
-          <input placeholder="Going to" id="query" oninput="query()" />
+          <div class="search_input">
+            <input placeholder="Going to" id="query" oninput='debouncing(query,1000)' />
+            <div id="container"></div>
+          </div>
+         
           <input placeholder="Check-in" type="date" />
           <input placeholder="Check-out"  type="date" />
           <input placeholder="Travelers" />
@@ -410,4 +414,4 @@
   </body>
 </html>
 
-<script href="script/index.js"></script>
+<script src="script/index.js"></script>
