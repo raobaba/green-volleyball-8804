@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div id="registNav">
+        <a href="#" class="previous round">&#8249</a>
+        <a href=""><img src="https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&siteid=70201" alt=""></a>
+        <a href="login.html" class="next round">&#8250</a>
+    </div>
+    <div id="registration">
+        <h1>Create an account</h1>
+        <input type="text" name="" id="email" placeholder="Email address" required><hr>
+        <input type="text" name="" id="first" placeholder="First name" required><hr>
+        <input type="text" name="" id="last" placeholder="Last name" required><hr>
+        <input type="password" name="password" placeholder="Password" autocomplete="current-password" required id="password">
+        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i><hr>
+        <div id="check_p">
+            <input type="checkbox" name="" id="myCheck" onclick="myFunction()">
+            <p style="color: grey">This is a public or shared device</p>
+        </div>
+        <p id="text" style="display: none;color: grey;">Not your device? Selecting this checkbox reduces the amount of <br> time you are signed in here.</p>
+        <p id="colo" style="color: grey">By creating an account, I agree to the Orbitz <a style="text-decoration: none" href="">Terms and Conditions,<br> Privacy Statement</a> and <a style="text-decoration: none" href="">Orbitz Rewards Terms and Conditions.</a></p>
+        <button id="continue">Continue</button>
+        <p style="margin-Left:99px;color: grey">already have an account ?<a style="text-decoration: none;color:rgb(0,126,143)" href="login.html" > Sign in</a></p>
+        <div>
+            <p style="margin-Left:160px;color: grey">Or sign up with </p>
+            <div id="imgTag">
+                <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="">
+                <img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="./script/signup.js"></script>
