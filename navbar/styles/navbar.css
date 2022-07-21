@@ -1,0 +1,151 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+}
+#navbar{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgb(0, 37, 60);
+    text-align: center;
+    color: rgb(252, 252, 252);
+    row-gap: 10px;
+    
+}
+.dropbtn {
+  background-color: transparent;
+  color: #fff;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover{
+  color: rgb(0, 137, 133);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
+}
+
+.dropdown a:hover {
+    border: 2px solid rgb(0, 137, 133);
+    width: 100%;
+}
+
+.show {display: block;}
+
+img{
+    width: 250px;
+    height: 40px;
+    margin-right: -100px;
+    margin-left: -60px;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+h4 a{
+    
+    justify-content: end;
+    color: #fff;
+}
+h4 a:hover{
+    color: rgb(0, 137, 133);;
+}
+.dis_flex{
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    background-color: #fff;
+    font-size: 15px;
+    color: rgb(0, 137, 133);
+}
+.dis_flex a{
+    color: rgb(0, 137, 133);
+    font-size: 16px;
+    
+}
+
+#footer_main{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 80px;
+    
+}
+.footer{
+   line-height: 2rem;
+    background-color: #fff;
+}
+.footer p a{
+    color: rgb(15, 168, 203);
+}
+.footer p a:hover{
+    border-bottom: 3px rgb(0, 137, 133); 
+}
+.footer-logo{
+    width: 200px;
+    margin-left: 20px;
+}
+.footer-logo img{
+    margin-left: 20px;
+}
+#end{
+    margin-top: 40px;
+   
+}
+#end p{
+    text-align: center;
+    width: 80%;
+    color: rgb(138, 132, 132);
+    line-height: 2rem;
+    margin-left: 10%;
+    font-size: 14px;
+}
+#btn{
+    margin-left: 90%;
+    border-radius: 26px;
+    width: 130px;
+    height: 45px;
+    background-color: #fff;
+    color: rgb(0, 137, 133); 
+    font-size:1.4rem;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#btn:hover{
+    background-color: rgb(0, 137, 133); 
+    color: #fff;
+}
+
