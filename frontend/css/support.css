@@ -1,0 +1,207 @@
+#nav{
+    display: flex;
+    background-color:  rgb(0, 37, 60);
+    color: rgb(0, 177, 255);
+    justify-content:space-evenly;
+    padding: 6px;
+   cursor: pointer;
+   margin-top: 10px;
+}
+
+.bgimage{
+    width: 100%;
+    height: 110px;
+    background-color: rgb(0, 177, 255);
+}
+.hulk{
+    display: flex;
+}
+
+#sell{
+    background-color: rgb(0, 37, 60);
+    color: rgb(0, 177, 255);
+    font-size: 18px;
+    border: 0px;
+    /* background-color: rgb(0, 137, 133); */
+}
+#sell:hover{
+    background-color: #fff;
+}
+.hulk p{
+    font-size: 18px;
+    margin-right: 20px;
+    
+}
+.hulk p:hover{
+    background-color: #fff;
+}
+#sup{
+    background-color: rgb(0, 37, 60);
+    color: rgb(0, 177, 255);
+    font-size: 18px;
+    border: 0px;
+    margin-left: 15px;
+    width: 100px;
+    height: 50%;
+    margin-top: 14px;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+    border: none;
+    /* line-height: 3rem; */
+}
+.support_logo{
+    background-color: #fff;
+    height: 50%;
+    margin-left: -100px ;
+    margin-top: 5px;
+}
+.support_logo img{
+    width: 250px;
+    
+}
+.Rewards{
+    background-color:  rgb(142, 0, 153);
+    color: #fff;
+    margin-left: -180px;
+    width: 130px;
+    height:30px;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+#submit{
+    background-color: rgb(0, 37, 60);
+    color: rgb(44, 112, 141);
+    font-size: 18px;
+    border: 1px solid  rgb(0, 177, 255);
+    width: 180px;
+    height: 60%;
+    margin-top: 14px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+#submit:hover{
+    color: rgb(0, 177, 255);
+}
+#sell{
+    background-color: rgb(0, 37, 60);
+    width: 100px;
+    height: 50%;
+    margin-top: 14px;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    border: none;
+    line-height: 3rem;
+}
+#sell option{
+    background-color:  rgb(0, 37, 60);
+    color: #fff;
+}
+#sup:hover{
+    background-color: #fff;
+    border: 1px solid black;
+}
+#sup option{
+    font-size: 15px;
+    background-color: rgb(0, 37, 60);
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    line-height: 3rem;
+}
+
+#bttn{
+  
+    width: 80%;
+    text-align: center;
+    height: 50%;
+    color: #fff;
+    background-color: rgb(196, 32, 75);
+}
+#new{
+    border-bottom: 1px solid #fff;
+}
+.omg{
+    display: flex;
+    background-color:  rgb(0, 37, 60);
+    color: rgb(0, 177, 255);
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+.omg p{
+    margin-top: 20px;
+    margin-left: 20px;
+} 
+.omg p:hover{
+    background-color: rgb(0, 37, 60);
+    bottom: 1px solid rgb(0, 177, 255);
+}
+
+.material-symbols-outlined{
+    position:absolute;
+    cursor: pointer;
+}
+.home{
+    width: 100%;
+    height: 120px;
+    /* border: 1px solid blue; */
+    cursor: pointer;
+}
+#heading1{
+    margin-bottom: -17px;
+}
+#Serach{
+    position: relative;
+    left: 2.5rem;
+    width: 29%;
+    height: 65px;
+    margin-top: -8px;
+    font-size: 22px;
+    margin-left: 30%;
+   border-right-color: #fff;
+   border: 0px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   counter-increment: inherit;
+}
+.second div{
+    width: 17%;
+    height: 60px;
+    /* border: 1px solid black; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    background-color: #fff;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.second{
+    height: 900px;
+    background-color: rgb(213, 231, 251);
+    height: 210px;
+    border: 1px solid sandybrown;
+    cursor: pointer;
+}
+h3{
+    
+    margin-left: 50px;
+}
+h1{
+  
+    margin-left: 50px;
+}
+.third p{
+    font-size: 21px;
+    color: rgb(95, 87, 87);
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 3%;
+}

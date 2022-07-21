@@ -22,6 +22,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-template-rows: auto;
+  
 }
 .box1 div :hover {
   border: 2px solid teal;
@@ -268,10 +269,10 @@ button {
   grid-template-columns: 2fr 1fr 1fr 1fr ;
 }
 
-.search_input{
-  /* width: 200px; */
+/* .search_input{
+   width: 200px; 
 
-}
+} */
 
 .search_input input {
   /* width: 200px; */
