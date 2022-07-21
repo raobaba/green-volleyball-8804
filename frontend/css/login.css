@@ -1,0 +1,81 @@
+#registNav{
+    width: 100%;
+    margin-top: -7px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    height: 30;
+}
+#registNav>a{
+    text-decoration: none;
+    font-size: 22px;
+    color:black;
+}
+#registNav>a>img{
+    height: 40px;
+    margin-top: 10px;
+}
+#check_p{
+    display: flex;
+    gap: 10px;
+}
+#check_p>input{
+    width: 22px;
+    height: 22px;
+    margin-top: 13px;
+}
+hr{
+    border: none;
+}
+#loging{
+    margin-left: 470px;
+}
+#email,#first,#last,#password{
+    width: 400px;
+    height: 45px;
+}
+#continue{
+    width: 410px;
+    height: 45px;
+    cursor: pointer;
+    background-color: rgb(235,182,196);
+    color: rgb(250,238,241);
+    border: none;
+    font-size: 21px;
+}
+#colo>a{
+    color: rgb(0,126,143);
+}
+#imgTag{
+    display: flex;
+    gap: 20px;
+    margin-left: 190px;
+}
+#imgTag>img{
+    width: 20px;
+    height: 20px;
+}
+#registNav>a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px 10px;
+  }
+  
+  #registNav>a:hover {
+    background-color: #04AA6D;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .next {
+    background-color: #ddd;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
