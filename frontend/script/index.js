@@ -3,6 +3,7 @@ async function query() {
   let url = `https://orbitz-ujjawal-api.herokuapp.com/airports?q=${query}`;
   let responce = await fetch(url);
   let data = await responce.json();
+  
 
   console.log(data);
   append(data, query);
@@ -20,6 +21,9 @@ function debouncing(func, delay) {
 
 function append(data, query) {
   let container = document.getElementById("container");
+  let display = document.getElementsByClassName("search_box_third")
+  display.innerHTML =null
+
 
   if (query == "") {
     return container.innerHTML = null;
@@ -27,6 +31,8 @@ function append(data, query) {
   container.innerHTML = null;
   data.forEach(function (el) {
     let div = document.createElement("div");
+    div.style.boderbottom = "1px solid black"
+    div.style.cursor = "pointer"
     div.addEventListener("click", function () {
       localStorage.setItem("searchQuery", JSON.stringify(query));
     });

@@ -34,16 +34,26 @@
         </div>
         <div class="search_box_second">
           <div class="search_input">
-            <input placeholder="Going to" id="query" oninput='debouncing(query,1000)' />
+            <input
+              placeholder="Going to"
+              id="query"
+              oninput="debouncing(query,1000)"
+            />
             <div id="container"></div>
           </div>
-         
+
           <input placeholder="Check-in" type="date" />
-          <input placeholder="Check-out"  type="date" />
+          <input placeholder="Check-out" type="date" />
           <input placeholder="Travelers" />
         </div>
 
-        <div class="search_box_third"></div>
+        <div class="search_box_third">
+          <span style="margin-left: 80px; "> <input type="checkbox" style="width: 17px; height: 15px;">   Add a flight</span>
+                  <span style="margin-left: 100px;"> <input type="checkbox" style="width: 17px; height: 15px;">  Add a Car</span>
+        
+          </div>
+
+        
 
         <div class="search_box_fourth">
           <button>Search</button>
