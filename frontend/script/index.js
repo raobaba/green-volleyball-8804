@@ -1,12 +1,15 @@
 async function query() {
   let query = document.getElementById("query").value;
   let url = `https://orbitz-ujjawal-api.herokuapp.com/airports?q=${query}`;
+  if (!query) {
+    return append([]);
+  }
   let responce = await fetch(url);
   let data = await responce.json();
 
   console.log(data);
   append(data);
-  mySearchFunction(query)
+  mySearchFunction(query);
 }
 
 let id;
@@ -24,16 +27,13 @@ function append(data) {
   let display = document.getElementsByClassName("search_box_third");
   display.innerHTML = null;
 
-  if (query == "") {
-    return (container.innerHTML = null);
-  }
   container.innerHTML = null;
   data.forEach(function (el) {
     let div = document.createElement("div");
     div.style.boderbottom = "1px solid black";
     div.style.cursor = "pointer";
     div.style.margin = "5px";
-    div.setAttribute("class","search_div")
+    div.setAttribute("class", "search_div");
 
     div.addEventListener("click", function () {
       // localStorage.setItem("searchQuery", JSON.stringify(query));
@@ -50,10 +50,9 @@ function append(data) {
   });
 }
 
+let search = document.getElementById("search");
+search.addEventListener("click", mySearchFunction());
 
-let search = document.getElementById("search")
-search.addEventListener("click",mySearchFunction())
-
-function mySearchFunction(query){
- localStorage.setItem("searchQuery", JSON.stringify(query));
+function mySearchFunction(query) {
+  localStorage.setItem("searchQuery", JSON.stringify(query));
 }
