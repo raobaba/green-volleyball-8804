@@ -152,14 +152,14 @@
 }
 .home{
     width: 100%;
-    height: 120px;
+    height: 125px;
     /* border: 1px solid blue; */
     cursor: pointer;
     margin-top: 27px;
 }
 .home{
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1507295386538-ddd5e86cd597?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTk0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://cdn.stocksnap.io/img-thumbs/280h/JNC9QYEZDT.jpg);
     /* background-repeat: no-repeat; */
    
 }
@@ -184,8 +184,6 @@
 .second div{
     width: 17%;
     height: 60px;
-    /* border: 1px solid black; */
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     vertical-align: top;
     display: inline-block;
     text-align: center;
@@ -194,12 +192,14 @@
     margin-left: 50px;
     cursor: pointer;
 }
+.second div:hover{
+    background-color: rgb(159, 217, 240);
+}
 .second{
     height: 900px;
     background-color: rgb(213, 231, 251);
     height: 210px;
-    /* border: 1px solid sandybrown; */
-    margin-top: -0%;
+    margin-top: 0%;
     cursor: pointer;
 }
 h3{
@@ -285,7 +285,12 @@ summary:hover{
     border-radius: 4px;
     font-size: 20px;
 }
+.yes button:hover{
+    background-color: rgb(197, 192, 192);
+}
 .bottom{
+    width: 90%;
+    margin-left: 5%;
     display: flex;
     margin-top: 10%;
     height: 300px;
@@ -311,11 +316,11 @@ summary:hover{
     color: rgb(0, 177, 255);
 }
 .bottom2{
-    border: 3px solid rgb(14, 103, 181);
-    width: 90%;
-    height: 300px;
+    border: 4px solid rgb(14, 103, 181);
+    width: 100%;
+    height: 295px;
     border-radius: 10px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     /* margin-top: 40px; */
 }
 .bottom2 img{
@@ -341,10 +346,12 @@ summary:hover{
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 .bottom2 button{
-    width: 80px;
+    width: 90px;
     height: 50px;
     font-size: 20px;
-    background-color: rgb(223, 56, 100);
+    border: 0px;
+    color: #fff;
+    background-color: rgb(212, 33, 81);
 }
 .ul{
     display: flex;
@@ -356,5 +363,82 @@ summary:hover{
 }
 .down1{
     text-align: center;
-    color: rgb(0, 53, 95);
+    margin-bottom: 40px;
+}
+
+.flexx{
+    display:inline-flex;
+    gap: 10px;
+    width: 90%;
+    height: 60px;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.flexx div{
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+}
+.flexx h2{
+    margin-top: 9px;
+    margin-right: 70px;
+}
+.flexx2{
+    display:inline-flex;
+    gap: 10px;
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+}
+.flexx2 div{
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+}
+.flexx2 h2{
+    margin-top: 9px;
+    margin-right: 70px;
+}
+.flexx3{
+    display:inline-flex;
+    gap: 10px;
+    width: 90%;
+    height: 70px;
+    margin-left: 5%;
+}
+.flexx3 div{
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+}
+.flexx3 h2{
+    margin-top: 9px;
+    margin-right: 70px;
+}
+.flexx4{
+    display:inline-flex;
+    gap: 10px;
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+}
+.flexx4 div{
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+}
+.flexx4 h2{
+    margin-top: 9px;
+    margin-right: 70px;
+}
+.flexx6{
+    width: 95%;
+    height: 80px;
+    margin:auto
+    
+}
+.flexx6 p{
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+    margin-left: 30px;
 }

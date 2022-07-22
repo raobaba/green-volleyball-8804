@@ -8,42 +8,47 @@ let navbar = () => {
         <div id="myDropdown" class="dropdown-content">
         <a href="#"> 
             <div class="dis_flex">
-            <span class="material-icons-sharp">grid_view</span>
-            <h3>Stays</h3>
+            
+            <h3>🏦  Stays</h3>
             </div>
         </a>
+        <br>
         <a href="#">
             <div class="dis_flex">
-            <span class="material-icons-sharp">grid_view</span>
-            <h3>Flights</h3>
+            <h3>✈  Flights</h3>
             </div>
         </a>
+        <br>
         <a href="#">
         <div class="dis_flex">
-            <span class="material-icons-sharp">grid_view</span>
-            <h3>Packages</h3>
+            
+            <h3>🛍  Packages</h3>
             </div>
         </a>
+        <br>
         <a href="#">
         <div class="dis_flex">
-            <span class="material-icons-sharp">grid_view</span>
-            <h3>Cars</h3>
+            
+            <h3>🚘  Cars</h3>
             </div>
             </a>
+            <br>
         <a href="#">
         <div class="dis_flex">
-            <span class="material-icons-sharp">grid_view</span>
-            <h3>Curises</h3>
+            
+            <h3>🔩  Curises</h3>
             </div>
             </a>
-       
+            <br>
             <div class="dis_flex">
             <a href="#">Deals</a>
             </a>
             </div>
+            <br>
             <div class="dis_flex">
             <a href="#">Group & meeting</a>
             </div>
+            <br>
             <div class="dis_flex">
             <a href="#">Travel Blog</a>
             </div>
@@ -51,7 +56,7 @@ let navbar = () => {
     </div>
     
     <h4>
-        <a href="https://www.orbitz.com/es/?langid=2058">Espanol</a>
+        <a href="https://www.orbitz.com/es/?langid=2058">Español</a>
     </h4>
     <h4>
         <a href="#">List your property</a>
@@ -128,7 +133,7 @@ let end = () => {
     
     <p>© 2022 Orbitz, LLC, An Expedia Group Company.</p>
     <p>Todos los derechos reservados. Orbitz, Orbitz.com , Orbitz y el logotipo de Salida son marcas registradas o marcas comerciales de Orbitz, LLC , ya sea en los U.S. y / o otros países. Otros logos o productos y nombres de compañías aquí mencionados pueden ser propiedad de sus respectivos dueños .</p>
-    <button id="btn" onclick="submit()">Help</button>
+    <button id="btn" onclick="submit()">💬Help</button>
     `;
 };
 export { navbar, footer_main, end }; //Default export;
