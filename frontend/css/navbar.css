@@ -5,6 +5,7 @@
 }
 body{
     font-family:sans-serif;
+    
 }
 #navbar{
     display: flex;
@@ -62,13 +63,13 @@ body{
 
 .show {display: block;}
 
-img{
+.orbitz img{
     width: 250px;
     height: 40px;
     margin-right: -100px;
     margin-left: -60px;
     background-color: #fff;
-}
+} 
 a{
     text-decoration: none;
     color: #000;
@@ -106,7 +107,7 @@ h4 a:hover{
 }
 .footer{
    line-height: 2rem;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .footer p a{
     color: rgb(15, 168, 203);

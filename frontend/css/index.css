@@ -7,7 +7,7 @@
 
 body {
   background-color: rgb(245, 245, 245);
-}
+} 
 
 .background_img img {
   width: 100%;
@@ -46,9 +46,9 @@ h2 {
   overflow: hidden;
   white-space: nowrap;
 }
-.Featured_offers div :hover {
+/* .Featured_offers div :hover {
   border: 2px solid teal;
-}
+} */
 
 .Featured_offers_1 {
   color: whitesmoke;
@@ -238,7 +238,7 @@ button {
 .search_box {
   position: absolute;
   width: 80%;
-  height: 300px;
+  height: 280px;
   top: 3rem;
   left: 10%;
   right: 10%;
@@ -251,9 +251,9 @@ button {
   justify-content: space-around;
   margin: auto;
   padding: 10px;
-
   border-bottom: 1px solid gray;
   height: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .search_box_first :hover {
@@ -263,46 +263,50 @@ button {
 .search_box_second {
   width: 85%;
   margin: auto;
-  margin-top: 20px;
-  gap: 20px;
+  margin-top: 1.25rem;
+  gap: 1.25rem;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr ;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  margin-bottom: 1.25rem;
 }
-
-/* .search_input{
-   width: 200px; 
-
-} */
 
 .search_input input {
   /* width: 200px; */
   width: 100%;
   height: 40px;
   position: relative;
-  
-
-
+  font-size: 1rem;
 }
+
 #container {
-  width: 100%;
-  height: 200px;
-  /* width: 200px; */
+
+  max-height: 200px;
+ 
+  width: 360px;
   overflow: auto;
   position: absolute;
- 
+  z-index: 9999;
+  background-color: white;
+  font-size: 1rem;
+  
+  font-size: 1rem;
 
 }
+
 .search_box_second input:nth-child(2) {
   width: 100%;
   height: 40px;
+  font-size: 1rem;
 }
 .search_box_second input:nth-child(3) {
   width: 100%;
   height: 40px;
+  font-size: 1rem;
 }
 .search_box_second input:nth-child(4) {
   width: 100%;
   height: 40px;
+  font-size: 1rem;
 }
 .search_box_fourth {
   width: 85%;
@@ -314,8 +318,18 @@ button {
 }
 .search_box_fourth button {
   margin-top: 10px;
-  padding: 15px 40px;
+  padding: 18px 40px;
   color: aliceblue;
   background-color: rgb(200, 50, 89);
   border: 0px;
 }
+.search_box_fourth button:hover {
+  border: 2px solid black;
+}
+
+.search_div {
+  border-bottom: 1px solid gray;
+  padding: 5px;
+
+}
+
