@@ -6,7 +6,7 @@ document.getElementById('footer_main').innerHTML = footer_main();
 document.getElementById('end').innerHTML = end();
 
 
-   document.querySelector('#button').addEventListener('click', ()=> {
+   document.querySelector('#bt').addEventListener('click', ()=> {
     document.getElementById("myDropdown").classList.toggle("show");
   });
   
@@ -23,3 +23,21 @@ document.getElementById('end').innerHTML = end();
       }
     }
   }
+
+
+
+  // document.querySelector(".Dropbtn").addEventListener("click", ()=>{
+  //   document.getElementById("MyDropdown").classList.toggle("show");
+  //   })
+  //   window.onclick = function(event) {
+  //     if (!event.target.matches('.Dropbtn')) {
+  //       var dropdowns = document.getElementsByClassName("Dropdown-content");
+        
+  //       for (var j = 0; j < dropdowns.length; j++) {
+  //         var openDropdown = dropdowns[j];
+  //         if (openDropdown.classList.contains('show')) {
+  //           openDropdown.classList.remove('show');
+  //         }
+  //       }
+  //     }
+  //   }

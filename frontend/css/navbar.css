@@ -5,6 +5,7 @@
 }
 body{
     font-family:sans-serif;
+    
 }
 #navbar{
     display: flex;
@@ -30,7 +31,7 @@ body{
   color: rgb(0, 137, 133);
 }
 
-.dropdown {
+.dropdown{
   position: relative;
   display: inline-block;
   
@@ -62,13 +63,13 @@ body{
 
 .show {display: block;}
 
-img{
+.orbitz img{
     width: 250px;
     height: 40px;
     margin-right: -100px;
     margin-left: -60px;
     background-color: #fff;
-}
+} 
 a{
     text-decoration: none;
     color: #000;
@@ -106,7 +107,7 @@ h4 a:hover{
 }
 .footer{
    line-height: 2rem;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .footer p a{
     color: rgb(15, 168, 203);
@@ -149,3 +150,66 @@ h4 a:hover{
     color: #fff;
 }
 
+
+
+ /* .Dropbtn {
+    background-color: rgb(0, 37, 60);
+      color: white;
+      padding: 16px;
+      font-size: 22px;
+      border: none;
+      cursor: pointer;
+      
+    }
+    
+    .Dropbtn:hover, .Dropbtn:focus {
+        color: rgb(0, 137, 133);
+    }
+    
+    .Dropdown {
+      position: relative;
+      display: inline-block;
+      width: 500px; 
+      background-color: #fff;
+      height:50px;
+      overflow: hidden; 
+    }
+    
+    .Dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px; 
+       overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    } 
+    
+    
+    .btn-1{
+        width: 90%; 
+        background-color:rgb(200, 51, 90);
+         padding: 12px; 
+        border: 0px;
+         margin-left: 16px; 
+        font-size: 22px;
+        color: #fff;
+    }
+    .btn-2{
+         width: 100%; 
+         font-size: 18px; 
+        color: rgb(0, 137, 133);
+        background-color: #fff;
+        border: 0px;
+        margin-left: 16px;
+    }
+    .btn-3{
+        color: rgb(4, 124, 120);
+        background-color: #fff;
+        border: 0px;
+    }
+     .h9{
+        font-size: 23px;
+    } 
+    .Dropdown a:hover {background-color: #ddd;}
+    .show {display: block;}  */
