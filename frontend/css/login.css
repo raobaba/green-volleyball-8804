@@ -34,6 +34,12 @@ hr{
     width: 400px;
     height: 45px;
 }
+#loging{
+    margin:auto;
+    width: 420px;
+    height: 700px;
+    /* border: 1px solid black; */
+}
 #continue{
     width: 410px;
     height: 45px;
