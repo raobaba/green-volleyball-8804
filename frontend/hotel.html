@@ -14,42 +14,51 @@
   <body>
     <div id="dmain">
         <div id="dfilter">
-        
-          <h3> Search By outer name</h3> 
+
+
+          <div id="mainly">
+            <div id="container"></div>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="240px" height="200px"  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe><a href="https://www.online-timer.net">
+                </a><br>
+               
+                
+              </div>
+            </div>
+          </div>
+        <div class="muskan">
+          <h3 class="property"> Search By Property name</h3> 
 
           <!-- <img src="https://cdn-icons.flaticon.com/png/512/2811/premium/2811806.png?token=exp=1658335272~hmac=3e4fcd78cb63433604734b54e0c777ca" alt=""> -->
-          <input type="text" placeholder="e.g.Best Western">
-          <h2>Filter by</h2>
+          <input type="text" class="dinput" placeholder="e.g.Best Western">
+        </div>
+          <h2 class="filterby">Filter by</h2>
 
-          <h3>Popular filters</h3>
-          <div id="filOptions">
-         
-
-
-
-
-
-
-
-
-            <span><input type="checkbox" value="freeAirport">    Bed & breakfast</span>
+          <h3 style="margin:0%;padding:0;"class="popular">Popular filters</h3>
+          <div class="filOptions">
+            <span style="margin:0%;padding:0;"><input type="checkbox" value="freeAirport">Bed & breakfast</span>
             <span><input type="checkbox" value="allinclusive"> Casino</span>
             <span><input type="checkbox" value="Powai">Breakfast included</span>
             <span><input type="checkbox" value="freeWifi"> Kharadi</span>
             <span><input type="checkbox" value="lunch"> All-inclusive plan available</span>
          </div>
 
-         $0<input type="range">60$
+        <span style="font-size:19px"> $0<input class="l-h" type="range">60$</span>
              
-         <h2>Guest rating</h2>
-         <div id="filOptions">
-          <span><input type="radio" value="75"> Any</span>
-          <span><input type="radio" value="125"> Wonderful 4.5+</span>
-          <span><input type="radio" value="200"> Very good 4+ </span>
-          <span><input type="radio" value="300"> Good 3.5+</span>
+         
+         <div class="filOptions">
+          <h3 style="margin:0%;padding:0;">Guest rating</h3>
+          <span style="margin:0%;padding:0;"><input type="radio" value="75"> Any</span>
+          <span style="margin:0%;padding:0;"><input type="radio" value="125"> Wonderful 4.5+</span>
+          <span style="margin:0%;padding:0;"><input type="radio" value="200"> Very good 4+ </span>
+          <span style="margin:0%;padding:0;"><input type="radio" value="300"> Good 3.5+</span>
        </div>
 
-       <h2>Star rating ☆</h2>
+       <h3>Star rating ☆</h3>
        <div id="starrating">
         
 
@@ -62,25 +71,36 @@
         
        </div>
         
-       <h3>Payment Type</h3>
-       <div id="filOptions">
-        <span><input type="checkbox" value="freeAirport"> Fully refundable</span>
+       
+       <div class="filOptions">
+        <h3 >Payment Type</h3>
+        <span style="margin:0%;padding:0;"><input type="checkbox" value="freeAirport"> Fully refundable</span>
         <span><input type="checkbox" value="allinclusive"> Cabin</span>
         <span><input type="checkbox" value="Powai">Hotel </span>
         <span><input type="checkbox" value="freeWifi">Motel</span>
        </div>
         
+       
+            <select name="Sort by" style="width: 100%" onchange="changeFunc()" id="dsortBy" aria-placeholder="sort">
+              <option value="Sort by">Sort By</option>
+              <option value="recommended">Recommended</option>
+              <option value="price">Price</option>
+              <option value="distance">Distance from airport</option>
+              <option value="rating">Star ratings</option>
+            </select>
         
-        
-        </div>
+        </select> 
+        <div class="newsme">
+        <button class="btnsame" onclick=" changeLowToHigh()">LowToHigh</button>
+        <button class="btnsame" onclick=" changeHighToLow()">HighToLow</button>
+      </div>
+      </div>
 
 
 
 
         <div id="box">
-    <!-- <div class="imagediv"></div> -->
-   <!-- <div id="detailsdiv"></div> -->
-    <!-- <div id="ddetails"></div> -->
+    
 </div>
 </div>
 </body>
