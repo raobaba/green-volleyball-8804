@@ -1,5 +1,4 @@
 import {navbar,footer_main,end} from '../components/navbar.js';
-console.log(navbar);
 
 document.getElementById('navbar').innerHTML = navbar();
 document.getElementById('footer_main').innerHTML = footer_main();
