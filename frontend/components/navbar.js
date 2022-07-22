@@ -57,7 +57,7 @@ let navbar = () => {
         <a href="#">List your property</a>
     </h4>
     <h4>
-        <a href="">Support</a>
+        <a href="support.html">Support</a>
     </h4>
     <h4>
         <a href="">Trips</a>
