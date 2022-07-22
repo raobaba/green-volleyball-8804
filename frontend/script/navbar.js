@@ -26,4 +26,18 @@ document.getElementById('end').innerHTML = end();
 
 
 
-  
+  // document.querySelector(".Dropbtn").addEventListener("click", ()=>{
+  //   document.getElementById("MyDropdown").classList.toggle("show");
+  //   })
+  //   window.onclick = function(event) {
+  //     if (!event.target.matches('.Dropbtn')) {
+  //       var dropdowns = document.getElementsByClassName("Dropdown-content");
+        
+  //       for (var j = 0; j < dropdowns.length; j++) {
+  //         var openDropdown = dropdowns[j];
+  //         if (openDropdown.classList.contains('show')) {
+  //           openDropdown.classList.remove('show');
+  //         }
+  //       }
+  //     }
+  //   }

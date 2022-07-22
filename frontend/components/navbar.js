@@ -63,7 +63,7 @@ let navbar =()=>{
         <a href="">Trips</a>
     </h4>
     <h4>
-        <a href="">Sign in</a>
+    <a href="">Sign in</a>
     </h4>
     
     `;
