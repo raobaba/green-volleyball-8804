@@ -3,7 +3,7 @@
 
 <head>
     <script src="https://kit.fontawesome.com/fa650845c0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/hotelroom.css">
+    <link rel="stylesheet" href="./css/hotelroom.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,11 +42,11 @@
         <!-- stick the div while scrolling add function -->
         <div id="fix">
             <div id="lists">
-                <div class="listed"><a href="#hotelSide"></a> Overview</div>
-                <div class="listed"><a href="#room_details"></a> Rooms</div>
-                <div class="listed"><a href=""></a> Location</div>
-                <div class="listed"><a href=""></a> Amenities</div>
-                <div class="listed"><a href=""></a>Policies</div>
+                <div class="listed"><a href="#hotelSide"> Overview</div></a>
+                <div class="listed"><a href="#room_details"> Rooms</div></a>
+                <div class="listed"><a href="#geolocation"> Location</div></a>
+                <div class="listed"><a href="#amenities"> Amenities </div></a>
+                <div class="listed"><a href="#policies">Policies</div></a>
                 <div class="listed">Reviews</div>
             </div>
             <a href="#footer" id="reserve"><button style="cursor: pointer;">Reserve a room</button></a>
@@ -54,10 +54,10 @@
         <!-- hotel details -->
         <div id="overView">
             <div id="hotelSide">
-                <div id="hotName">JW Marriott Mumbai Sahar</div>
+                <div id="hotName" class="hotName">JW Marriott Mumbai Sahar</div>
                 <div id="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                         class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <div class="subHead">4.6/5 Wonderful</div>
+                <div id="ratings" class="subHead">4.6/5 Wonderful</div>
                 <div class="small">Guests rated this property 4.7/5 for cleanliness.</div>
                 <div class="lynk">See all 454 reviews &nbsp;<i class="fas fa-chevron-right"></i></div>
                 <div class="subHead">Popular amenities</div>
@@ -142,16 +142,21 @@
         </div>
         <div id="footer"></div>
         <div id="room_details">
-            <div id="room_detailsimg">
+            <!-- <div id="room_detailsimg">
                 <img src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2d4614d2.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
                     alt="">
-            </div>
-            <div id="room_detailstype">
+            </div> -->
+            <!-- <div id="room_detailstype">
                 <h2>Standard Room, 1 King Bed, Non Smoking</h2>
                 <p>344 sq ft</p>
                 <p>Sleeps 3</p>
                 <p>1 King Bed</p>
-            </div>
+            </div> -->
+            <!-- <div id="pricestandard">
+                <div id="pricebutton">
+                    <a href="#footer"><button id="onclick1"  >Select a Room</button></a>
+                </div>
+            </div> -->
         </div>
         <div id="roomList">
 
@@ -186,8 +191,8 @@
                 </div>
                 <div>
                     <h2>Getting around</h2>
-                    <p>New Delhi Bijwasan Station - 10 min drive</p>
-                    <p>Delhi Aero City Station - 12 min walk</p>
+                    <p> Bijwasan Station - 10 min drive</p>
+                    <p> Aero City Station - 12 min walk</p>
                 </div>
 
             </div>
@@ -201,7 +206,7 @@
                     <h2>About this Property</h2>
                 </div>
                 <div>
-                    <h2>Radisson Blu Plaza Delhi Airport</h2>
+                    <h2 class="hotName">Radisson Blu Plaza Delhi Airport</h2>
                     <p>Catch some rays at the beach or spend the day relaxing at ITC Grand Goa, a Luxury Collection
                         Resort & Spa, Goa's full-service spa. Then enjoy a meal at one of the resort's 5 restaurants.
                     </p>
@@ -344,4 +349,4 @@
 
 
 </html>
-<script src="/hotelroom.js" type="module"></script>
+<script src="./script/hotelroom.js" type="module"></script>

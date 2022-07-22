@@ -1,5 +1,5 @@
 let url = `https://orbitz-ujjawal-api.herokuapp.com/rooms`
-let url = `http://fake-hotel-api.herokuapp.com/api/hotels`
+// let url = `http://fake-hotel-api.herokuapp.com/api/hotels`
 fetch(url).then(function (res) {
     return res.json();
 }).then(function (data) {
@@ -11,6 +11,7 @@ fetch(url).then(function (res) {
 })
 
 // imgDiv1
+let roomlocal=[]
 
 let createRoom = (Data) => {
 
@@ -142,6 +143,10 @@ let createRoom = (Data) => {
         left_D.textContent = "we have 5 left";
         lasrReserveDiv.append(left_D, resBtn);
         resBtn.addEventListener("click", function () {
+            
+            let roomdatalocal=localStorage.setItem("localdataroom",JSON.stringify(elem))
+            // roomlocal.push(roomdatalocal)
+            console.log(roomdatalocal)
             // window.location.href = "payment.html";
         });
         //---------------------------------------------------
@@ -162,13 +167,56 @@ let createRoom = (Data) => {
 
  
 }
+// var arr=[
+//     {
+//         id: "8efc9c52-e693-4c34-8963-8c834cd6b0f4",
+//         name: "deserunt sint quia",
+//         country: "Martinique",
+//         city: "Theaburgh",
+//         price: 781,
+//         images: [
+//           "http://lorempixel.com/640/480/city?27536",
+//           "http://lorempixel.com/640/480/city?2598",
+//           "http://lorempixel.com/640/480/city?26063",
+//           "http://lorempixel.com/640/480/city?40263"
+//         ],
+//         date_start: "2022-07-14T06:40:02.001Z",
+//         date_end: "2022-10-10T15:17:18.621Z",
+//         stars: 5,
+//         rating: 3.553312526801492,
+//         description: "Deleniti dolores et est quam consequuntur et odit quia sed. Velit animi id cumque ab earum alias voluptatem tempore tenetur. Repellat aliquam repudiandae qui. Ea eum blanditiis iure molestiae."
+//     }
+// ]
+var local=localStorage.setItem("nitesh",JSON.stringify(arr))
 let localdata=JSON.parse(localStorage.getItem("nitesh"))
+// console.log(localdata)
 let nameappend=(localdata)=>{
     localdata.forEach(el => {
-        let name=document.querySelector("#hotname")=null;
-        name.innerText=el.hotelname
-        let img=document.querySelector("#hotimg")=null;
-        img.src=el.imgSrc
+        // console.log(el.city)
+        let name=document.querySelector(".hotName")
+        name.innerText=el.name
+        let img=document.querySelector("#hotimg")
+        // img.src=el.imgSrc
+        let rating=document.querySelector("#ratings")
+        ratings.innerText=el.ratings
+        let price=document.querySelector("#pricestandard")
+        // price.innerText=`$ ${el.price}`;
+        
+
+
+
     });
 }
-nameappend()
+nameappend(localdata)
+
+
+let onclick11=document.getElementById("onclick1")
+onclick11.addEventListener("click",onclick12)
+
+function onclick12(){
+    console.log("hello")
+    location.href="#maindiv"
+}
+
+
+
