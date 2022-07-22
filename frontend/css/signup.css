@@ -28,7 +28,10 @@ hr{
     border: none;
 }
 #registration{
-    margin-left: 470px;
+    margin:auto;
+    width: 420px;
+    height: 700px;
+    /* border: 1px solid black; */
 }
 #email,#first,#last,#password{
     width: 400px;
