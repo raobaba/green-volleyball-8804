@@ -1,12 +1,13 @@
 #maincontainer {
     width: 90%;
-
     margin: auto;
 }
-/* *{
+*{
     margin: 0px;
     padding: 0px;
-} */
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+} 
 
 #topProp {
     width: 74%;
@@ -537,23 +538,6 @@ select {
 
 
 /* ************* */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

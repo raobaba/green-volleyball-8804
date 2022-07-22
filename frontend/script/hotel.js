@@ -27,6 +27,7 @@ function append(data) {
     let div = document.createElement("div");
     div.addEventListener("click", function () {
       localStorage.setItem("nitesh", JSON.stringify(el));
+      window.location.href = "hotelroom.html"
     });
     div.setAttribute("class", "dflex");
     let div1 = document.createElement("div");
