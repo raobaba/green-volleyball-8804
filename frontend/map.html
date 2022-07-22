@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 500px;
+      width: 600px;
+    }
+    #mainly{
+      display:flex;
+      gap: 90px;
+      margin-left:20px ;
+    }
+  </style>
+</head>
+
+<body>
+
+  <input type="text" id="city">
+  <button onclick="getData()">search weather</button>
+<div id="main">
+  <div id="container"></div>
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe width="600" height="500" id="gmap_canvas"
+        src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+      </iframe><a href="https://www.online-timer.net">
+      </a><br>
+     
+      
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
+<script>
+
+
+  const api_key = "15cfe6d6afaacb073072f6ef67c295e9";
+  async function getData() {
+    let city = document.getElementById("city").value
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=${api_key}`;
+
+    let res = await fetch(url);
+    let data = await res.json();
+    append(data);
+    console.log(data);
+  }
+  // var poster=document.createElement("img");
+  //   poster.src=el.poster;
+  function append(data) {
+
+    let container = document.getElementById("container")
+    container.innerHTML = null;
+    let h3 = document.createElement("h3");
+    h3.innerText = data.name;
+    let p1 = document.createElement("p")
+    p1.innerText = `Current temp: ${data.main.temp}`;
+    let p2 = document.createElement("p")
+    p2.innerText = `Max temp: ${data.main.temp_max}`;
+    let p3 = document.createElement("p")
+    p3.innerText = `Min temp: ${data.main.temp_min}`;
+    let p4 = document.createElement("p")
+    p4.innerText = `speed: ${data.wind.speed}`;
+    let p5 = document.createElement("p")
+    p5.innerText = `speed: ${data.clouds.all}`;
+    let sunr = document.createElement("img")
+    sunr.src = "https://cdn-icons.flaticon.com/png/128/3920/premium/3920688.png?token=exp=1653738018~hmac=18369a64885124f81e80afc0e48fed78"
+
+    container.append(h3, p1, p2, p3, p4, p5, sunr);
+
+    let iframe=document.getElementById("gmap_canvas");
+    iframe.src=`https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<!-- 
+//     async function getData(lat, lon) {
+//   let city = document.getElementById("city").value;
+//   // Destination
+//   let url = `https://api.openweathermap.org/data/2.5/weather?q=satna&appid=15cfe6d6afaacb073072f6ef67c295e9`;
+// //   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}`;
+//   let res = await fetch(url);
+//   let data = await res.json();
+//   append(data);
+//   console.log(data);
+// }
+// //// Based on current location
+// // function getLocationWeather() {
+// //   navigator.geolocation.getCurrentPosition(success);
+// //   function success(position) {
+// //     const latitude = position.coords.latitude;
+// //     const longitude = position.coords.longitude;
+// //     getData(latitude, longitude);
+// //     console.log(latitude);
+// //     console.log(longitude);
+// //   }
+// // }
+//  -->
