@@ -7,7 +7,7 @@
 
 body {
   background-color: rgb(245, 245, 245);
-}
+} 
 
 .background_img img {
   width: 100%;
@@ -22,6 +22,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-template-rows: auto;
+  
 }
 .box1 div :hover {
   border: 2px solid teal;
@@ -317,7 +318,7 @@ button {
 }
 .search_box_fourth button {
   margin-top: 10px;
-  padding: 18px 45px;
+  padding: 18px 40px;
   color: aliceblue;
   background-color: rgb(200, 50, 89);
   border: 0px;
@@ -331,3 +332,4 @@ button {
   padding: 5px;
 
 }
+

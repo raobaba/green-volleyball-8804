@@ -1,5 +1,5 @@
-let navbar =()=>{
-    return `
+let navbar = () => {
+  return `
    <div class="orbitz"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Orbitz_logo.svg/1024px-Orbitz_logo.svg.png" alt="">
    
    </div>
@@ -49,6 +49,7 @@ let navbar =()=>{
             </div>
         </div>
     </div>
+    
     <h4>
         <a href="https://www.orbitz.com/es/?langid=2058">Espanol</a>
     </h4>
@@ -62,12 +63,13 @@ let navbar =()=>{
         <a href="">Trips</a>
     </h4>
     <h4>
-        <a href="">Sign in</a>
+        <a href="signup.html">Sign in</a>
     </h4>
+    
     `;
 };
-let footer_main =()=>{
-    return`
+let footer_main = () => {
+  return `
    
    
     <div class="footer-logo">
@@ -119,14 +121,14 @@ let footer_main =()=>{
         <p><a href="https://www.orbitz.com/service/#/article/19518">Use an Orbitz Coupon</a></p>
 
     </div>
-    `
-}
-let end =()=>{
-    return`
+    `;
+};
+let end = () => {
+  return `
     
     <p>© 2022 Orbitz, LLC, An Expedia Group Company.</p>
     <p>Todos los derechos reservados. Orbitz, Orbitz.com , Orbitz y el logotipo de Salida son marcas registradas o marcas comerciales de Orbitz, LLC , ya sea en los U.S. y / o otros países. Otros logos o productos y nombres de compañías aquí mencionados pueden ser propiedad de sus respectivos dueños .</p>
     <button id="btn" onclick="submit()">Help</button>
-    `
-}
-export {navbar,footer_main,end};  //Default export;
+    `;
+};
+export { navbar, footer_main, end }; //Default export;

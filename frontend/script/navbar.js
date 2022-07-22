@@ -6,7 +6,7 @@ document.getElementById('footer_main').innerHTML = footer_main();
 document.getElementById('end').innerHTML = end();
 
 
-   document.querySelector('#button').addEventListener('click', ()=> {
+   document.querySelector('#bt').addEventListener('click', ()=> {
     document.getElementById("myDropdown").classList.toggle("show");
   });
   
@@ -23,3 +23,7 @@ document.getElementById('end').innerHTML = end();
       }
     }
   }
+
+
+
+  
