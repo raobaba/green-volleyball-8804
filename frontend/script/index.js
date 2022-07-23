@@ -54,6 +54,25 @@ search.addEventListener("click", setQueryLs);
 function setQueryLs() {
   let query = document.getElementById("query").value;
   query = query.split("-")[1];
-  localStorage.setItem("searchQuery", JSON.stringify(query));
+  let from = document.getElementById("date1").value;
+
+  let to = document.getElementById("date2").value;
+
+  let travelers = document.getElementById("travelers").value;
+
+  let searchData = new Data(query, from, to, travelers);
+  console.log(searchData, "seach daqta");
+
+localStorage.setItem("searchQuery", JSON.stringify(searchData));
+
   window.location.href = "hotel.html";
+}
+
+class Data {
+  constructor(query, from, to, travelers) {
+  this.query = query
+    this.from =from
+  this.to = to
+   this.travelers = travelers
+  }
 }
