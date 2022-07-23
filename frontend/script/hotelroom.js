@@ -11,7 +11,7 @@ fetch(url).then(function (res) {
 })
 
 // imgDiv1
-let roomlocal=[]
+let roomlocal = []
 
 let createRoom = (Data) => {
 
@@ -143,11 +143,11 @@ let createRoom = (Data) => {
         left_D.textContent = "we have 5 left";
         lasrReserveDiv.append(left_D, resBtn);
         resBtn.addEventListener("click", function () {
-            
-            let roomdatalocal=localStorage.setItem("localdataroom",JSON.stringify(elem))
+
+            let roomdatalocal = localStorage.setItem("localdataroom", JSON.stringify(elem))
             // roomlocal.push(roomdatalocal)
             console.log(roomdatalocal)
-            // window.location.href = "payment.html";
+            window.location.href = "payment.html";
         });
         //---------------------------------------------------
         lastReserve_mainDiv.append(lastDiv, lasrReserveDiv);
@@ -165,7 +165,7 @@ let createRoom = (Data) => {
     // });
 
 
- 
+
 }
 // var arr=[
 //     {
@@ -187,36 +187,46 @@ let createRoom = (Data) => {
 //         description: "Deleniti dolores et est quam consequuntur et odit quia sed. Velit animi id cumque ab earum alias voluptatem tempore tenetur. Repellat aliquam repudiandae qui. Ea eum blanditiis iure molestiae."
 //     }
 // ]
-var local=localStorage.setItem("nitesh",JSON.stringify(arr))
-let localdata=JSON.parse(localStorage.getItem("nitesh"))
-// console.log(localdata)
-let nameappend=(localdata)=>{
-    localdata.forEach(el => {
-        // console.log(el.city)
-        let name=document.querySelector(".hotName")
-        name.innerText=el.name
-        let img=document.querySelector("#hotimg")
-        // img.src=el.imgSrc
-        let rating=document.querySelector("#ratings")
-        ratings.innerText=el.ratings
-        let price=document.querySelector("#pricestandard")
-        // price.innerText=`$ ${el.price}`;
+// var local=localStorage.setItem("nitesh",JSON.stringify(arr))
+
+let Ldata =JSON.parse(localStorage.getItem("hoteldata"))
+console.log(Ldata)
+arrayl=[]
+arrayl.push(Ldata)
+console.log(arrayl)
+let nameappend = (arrayl) => {
+    let name = document.querySelector(".hotName")
+    arrayl.forEach(el => {
         
+        name.innerHTML = el.hotelName
+        let img = document.querySelector("#hotimg")
+        img.src = el.imgSrc
+        let rating = document.querySelector("#ratings")
+        rating.innerText = el.ratingNum
+        let price = document.querySelector("#pricestandard")
+        // price.innerText=`$ ${el.price}`;
+
 
 
 
     });
 }
-nameappend(localdata)
+nameappend(arrayl)
 
 
-let onclick11=document.getElementById("onclick1")
-onclick11.addEventListener("click",onclick12)
+// let onclick11 = document.getElementById("onclick1")
+// onclick11.addEventListener("click", onclick12)
 
-function onclick12(){
-    console.log("hello")
-    location.href="#maindiv"
+// function onclick12() {
+//     console.log("hello")
+//     location.href = "#maindiv"
+// }
+
+
+
+// let dataasa=(localStorage.getItem("nitesh"));
+// console.log("hello"+dataasa)
+
+function hotelpage(){
+    window.location.href="hotel.html"
 }
-
-
-
