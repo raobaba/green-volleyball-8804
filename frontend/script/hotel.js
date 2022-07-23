@@ -1,7 +1,7 @@
 let hotelData = [];
 
 let query = JSON.parse(localStorage.getItem("searchQuery"));
-let searchQuery = query.query
+let searchQuery = query.query;
 
 const url = `https://orbitz-ujjawal-api.herokuapp.com/hotels?q=${
   searchQuery ? searchQuery : "mumbai"
@@ -28,7 +28,7 @@ function append(data) {
     let div = document.createElement("div");
     div.addEventListener("click", function () {
       localStorage.setItem("hoteldata", JSON.stringify(el));
-      window.location.href = "hotelroom.html"
+      window.location.href = "hotelroom.html";
     });
     div.setAttribute("class", "dflex");
     let div1 = document.createElement("div");

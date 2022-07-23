@@ -61,7 +61,7 @@ function setQueryLs() {
   let travelers = document.getElementById("travelers").value;
 
   let searchData = new Data(query, from, to, travelers);
-  console.log(searchData, "seach daqta");
+  // console.log(searchData, "seach daqta");
 
 localStorage.setItem("searchQuery", JSON.stringify(searchData));
 
