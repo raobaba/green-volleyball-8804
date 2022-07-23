@@ -86,7 +86,13 @@
     margin-left: 40px;
     color: rgb(0,101,191);
 }
-.appending{
+#appendone{
+    width: 455px;
+    height: 400px;
+    background-color:rgb(255,255,255);
+    margin-top: 30px;
+}
+#appendtwo{
     width: 455px;
     height: 400px;
     background-color:rgb(255,255,255);
