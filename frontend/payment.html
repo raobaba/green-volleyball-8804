@@ -45,7 +45,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqCc-JYwf2l3DQyIKDhyoxQA8Y2VmNVk2EUQ&usqp=CAU" alt="">
                 </div>
             </div>
-            <div class="appending">
+            <div id="appendone">
                    <!-- append data here -->
             </div>
         </div>
@@ -69,11 +69,11 @@
                  <div id="upper">
                    <div class="flx">
                       <p>First Name*</p>
-                      <input type="text" name="" id="first" placeholder="(e.g Rajan)">
+                      <input type="text" name="" id="first" placeholder="(e.g Rajan)" required>
                    </div>
                    <div class="flx">
                     <p>Last Name*</p>
-                    <input type="text" name="" id="first" placeholder="(e.g Kumar)">
+                    <input type="text" name="" id="last" placeholder="(e.g Kumar)" required>
                  </div>
                  </div>
                  <p>Mobile Phone Number*</p>
@@ -101,7 +101,7 @@
                     <option value="">Bulgariya +226</option>
                     <option value="">Burkina +226</option>
                 </select>
-                <input type="text" name="" id="property" placeholder="So the property can reach you">
+                <input type="number" name="" id="property" placeholder="So the property can reach you" required>
                 <div id="ins">
                     <input type="checkbox">
                     <p>Receive text alerts about this trip. Message and data rates may apply.</p>
@@ -148,7 +148,7 @@
                  <p style="color:grey;font-size:13px" >“ Things happened outside of my control which caused the trip to be canceled. The Travel Protection was valuable in reducing the losses to me when we had to cancel the trip. ” - Mr. Rodman</p>
             </div>
         </div>
-        <div class="appending">
+        <div id="appendtwo">
           <!-- appending data here -->
         </div>
        </div>
@@ -169,9 +169,9 @@
            <div>
               <div>
                  <p style="margin-left:70px;color:grey">Name on Card*</p>
-                 <input style="width:400px;height:30px" type="text">
+                 <input style="width:400px;height:30px" type="text" id="name" required>
                  <p style="margin-left:70px;color:grey">Debit/Credit Card Number*</p>
-                 <input style="width:200px;height:30px" type="text">
+                 <input style="width:200px;height:30px" type="text" id="credit" required>
                  <p style="color:green;background-Color:white;margin-left:70px">Only needed to guarantee your booking</p>
                  <p style="margin-left:70px;color:grey">Expiration Date</p>
                  <div id="select">
@@ -205,11 +205,11 @@
                  <div style="display:flex">
                     <div>
                         <p style="margin-left:70px;color:grey">Security Code*</p>
-                        <input style="width:100px;height:30px;border-radius: 5px" type="text">
+                        <input style="width:100px;height:30px;border-radius: 5px" type="text" id="security" required>
                     </div>
                     <div>
                         <p style="margin-left:70px;color:grey">Billing Zip Code</p>
-                        <input style="width:100px;height:30px;border-radius: 5px" type="text">
+                        <input style="width:100px;height:30px;border-radius: 5px" type="text" id="billing" required>
                     </div>
                  </div>
               </div>
@@ -221,7 +221,7 @@
             <p>Please enter the email address where you would like to receive your confirmation.</p>
           </div>
             <p>Email Address*</p>
-            <input type="text" placeholder="raorajan9576@gmail.com">
+            <input type="text" placeholder="raorajan9576@gmail.com" id="email" required>
        </div>
        <div id="seventh">
           <h3>Important information about your booking</h3>
@@ -232,7 +232,7 @@
             <li>Front desk staff will greet guests on arrival.</li>
             <li>To register at this property, guests who are Indian citizens must provide a valid photo identity card issued by the Government of India; travelers who are not citizens of India must present a valid passport and visa.</li>
             <p>By clicking on the button below, I acknowledge that I have reviewed the <a href="">Privacy Statement</a> Opens in a new window. and <a href="">Government Travel Advice</a> Opens in a new window. and have reviewed and accept the <a href="">Rules & Restrictions</a> Opens in a new window. and <a href="">Terms of Use</a> Opens in a new window..</p>
-            <button>Complete Booking ></button>
+            <button id="submit" onclick="roomBooking()">Complete Booking ></button>
              <p>We use secure transmission and encrypted storage to protect your personal information.</p>
              <p>This payment will be processed in the U.S. This does not apply when the travel provider (airline/hotel/rail, etc.) processes your payment.</p>
           </div>
