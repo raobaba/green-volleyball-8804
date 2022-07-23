@@ -25,8 +25,8 @@ getData()
 // let arr=JSON.parse(localStorage.getItem("purchase"))||[]
 
 function append(data){
-let box=document.getElementById("box");
-box.innerHTML=null;
+let dbox=document.getElementById("dbox");
+dbox.innerHTML=null;
 
 data.forEach(function(el){
 
@@ -70,7 +70,7 @@ var left = document.createElement("div");
 
 div1.setAttribute("class","dimage")   
  div2.setAttribute("class","details")    
- document.querySelector("#box").append(div)
+ document.querySelector("#dbox").append(div)
  div.append(div1,div2)
 div1.append(image)
 div2.append(hotel,refund,reserve,price,left,ratingWord,rating,);

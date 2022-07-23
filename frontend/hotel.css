@@ -5,7 +5,7 @@ body{
 /* *{
   padding: 0%;
   margin: 0%;
-  box-sizing: border-box;
+  ddbox-sizing: border-ddbox;
 } */
 
 #dmain{
@@ -25,7 +25,7 @@ body{
  
 
 }
-#box{
+#dbox{
 
 width: 75%;
 height: auto;
@@ -35,7 +35,7 @@ gap:10px;
 
 }
 
-#box>div{
+#dbox>div{
   /* border: 1px solid green; */
   margin-top: 20px;
   background-color:white ;
@@ -105,16 +105,21 @@ font-variation-settings:
     height: 40px;
     width: 50px;;
     border: 1px solid;
-  
+     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
     padding-top: 20px;
     border-radius: 8px;
+    
 }
-
+.biginput:hover{
+  background-color: rgb(164, 164, 177);
+}
 #starrating{
     display: flex;
+    justify-content: center;
+    text-align: center;
     /* border: 1px solid; */
     gap:5px;
     
@@ -192,9 +197,9 @@ span{
   margin-top: 10px;
 }
 
-h2{
+/* h2{
   margin-top: 0%;
-}
+} */
 .muskan{
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;

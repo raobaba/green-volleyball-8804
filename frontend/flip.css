@@ -1,0 +1,89 @@
+body {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+}
+
+.background-image{
+border: 1px solid black; 
+width:100%;
+height:500px;
+/* position: relative;  */
+background-image:url("https://t4.ftcdn.net/jpg/02/74/97/27/240_F_274972728_IxXkwDkGInw4klBJfK1p7vSPKkpT7QVG.jpg");
+
+background-repeat: no-repeat;
+background-size: 100% 500px; 
+}
+
+.overlay{
+height:40%;
+width:50%;
+border: 0px solid blue; 
+font-size: 26px;
+color: white;
+margin-top: 5%;
+margin-left: 150px;
+/* display: flex;
+justify-content: center;
+align-items: center; */ 
+}
+.completing{
+margin-top: 10px;
+width:43%;
+font-size: 30px;
+margin-left: 50px;
+
+}
+.rates{
+width:60%;
+display: flex;
+gap:10px;
+margin-left: 50px;
+margin-top: 30px;;
+
+}
+
+.rates>div{
+width:30%;
+height:20%;
+
+}
+
+.oversame{
+height: 100%;
+width: 100%;
+
+}
+.save{
+background-color: rgb(68, 151, 184);
+height:50px;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+.margindown{
+margin-top: 7px;
+color:white;
+}
+.fastq{
+width:43%;
+font-size: 20px;
+gap:10px;
+margin-left: 50px;
+font-weight: bold;
+
+}
+#gridview{
+height:40px;
+border:1 px solid black;
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(11,1fr);
+grid-template-rows: repeat(auto);
+justify-content: space-between;
+}
+#lastly{
+width: 95%;
+margin-top: 7%;
+margin-left: 50px;
+}
