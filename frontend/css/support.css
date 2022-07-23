@@ -1,0 +1,451 @@
+/* * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  } */
+
+
+#nav{
+    display: flex;
+    background-color:  rgb(0, 37, 60);
+    color: rgb(0, 177, 255);
+    justify-content:space-evenly;
+    padding: 6px;
+   cursor: pointer;
+   margin-top: 10px;
+   
+}
+
+.bgimage{
+    width: 100%;
+    height: 110px;
+    background-color: rgb(0, 177, 255);
+    /* background-image: url() */
+}
+.hulk{
+    display: flex;
+}
+
+#sell{
+    background-color: rgb(0, 37, 60);
+    color: rgb(0, 177, 255);
+    font-size: 18px;
+    border: 0px;
+    /* background-color: rgb(0, 137, 133); */
+}
+#sell:hover{
+    background-color: #fff;
+}
+.hulk p{
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 21px;
+    
+}
+/* .hulk p:hover{
+    background-color: #fff;
+} */
+#sup{
+    background-color: rgb(0, 37, 60);
+    color: rgb(0, 177, 255);
+    font-size: 18px;
+    border: 0px;
+    margin-left: 15px;
+    width: 100px;
+    height: 50%;
+    margin-top: 14px;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+    border: none;
+    /* line-height: 3rem; */
+}
+.support_logo{
+    background-color: #fff;
+    height: 50%;
+    margin-left: -100px ;
+    margin-top: 5px;
+}
+.support_logo img{
+    width: 250px;
+   
+}
+.Rewards{
+    background-color:  rgb(142, 0, 153);
+    color: #fff;
+    margin-left: -180px;
+    width: 130px;
+    height:30px;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+#submit{
+    background-color: rgb(0, 37, 60);
+    color: rgb(44, 112, 141);
+    font-size: 18px;
+    border: 1px solid  rgb(0, 177, 255);
+    width: 180px;
+    height: 60%;
+    margin-top: 14px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+#submit:hover{
+    color: rgb(0, 177, 255);
+}
+#sell{
+    background-color: rgb(0, 37, 60);
+    width: 100px;
+    height: 50%;
+    margin-top: 14px;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    border: none;
+    /* line-height: 3rem; */
+}
+#sell option{
+    background-color:  rgb(0, 37, 60);
+    color: #fff;
+}
+#sup:hover{
+    background-color: #fff;
+    border: 1px solid black;
+}
+#sup option{
+    font-size: 15px;
+    background-color: rgb(0, 37, 60);
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    line-height: 3rem;
+}
+
+#bttn{
+  
+    width: 80%;
+    text-align: center;
+    height: 50%;
+    color: #fff;
+    background-color: rgb(196, 32, 75);
+}
+#new{
+    border-bottom: 1px solid #fff;
+}
+.omg{
+    display: flex;
+    background-color:  rgb(0, 37, 60);
+    color: rgb(0, 177, 255);
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+.omg p{
+    margin-top: 20px;
+    margin-left: 20px;
+} 
+.omg p:hover{
+    background-color: rgb(0, 37, 60);
+    bottom: 1px solid rgb(0, 177, 255);
+}
+
+.material-symbols-outlined{
+    position:absolute;
+    cursor: pointer;
+}
+.home{
+    width: 100%;
+    height: 125px;
+    /* border: 1px solid blue; */
+    cursor: pointer;
+    margin-top: 27px;
+}
+.home{
+    width: 100%;
+    background-image: url(https://cdn.stocksnap.io/img-thumbs/280h/JNC9QYEZDT.jpg);
+    /* background-repeat: no-repeat; */
+   
+}
+    
+#heading1{
+    margin-bottom: -17px;
+    color: #fff;
+}
+#Serach{
+    position: relative;
+    left: 2.5rem;
+    width: 29%;
+    height: 65px;
+    margin-top: -8px;
+    font-size: 22px;
+    margin-left: 30%;
+   border-right-color: #fff;
+   border: 0px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   counter-increment: inherit;
+}
+.second div{
+    width: 17%;
+    height: 60px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    background-color: #fff;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.second div:hover{
+    background-color: rgb(159, 217, 240);
+}
+.second{
+    height: 900px;
+    background-color: rgb(213, 231, 251);
+    height: 210px;
+    margin-top: 0%;
+    cursor: pointer;
+}
+h3{
+    
+    margin-left: 50px;
+}
+h1{
+  
+    margin-left: 50px;
+}
+.third p{
+    font-size: 21px;
+    color: rgb(95, 87, 87);
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+/* .complete{
+    width: 100%;
+} */
+.top{
+    display: flex;
+}
+.bigboss{
+    width: 70%;
+    height: auto;
+    font-size: 22px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* margin-bottom: -30%; */
+    margin-left: 5%;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.bigboss summary{
+    margin: 4px;
+}
+.bigbox{
+    width: 20%;
+    /* height: 600px; */
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 3%;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.bigbox summary{
+color: #000;
+margin: 5px;
+padding:10px;
+}
+.bigbox p{
+color: rgb(7, 125, 206);
+font-size: 20px;
+margin-left: 10px;
+
+}
+summary{
+    color: rgb(21, 116, 191);
+    /* margin-bottom: 20px; */
+   
+}
+details{
+    border-bottom: 1px solid rgb(191, 194, 196);
+    margin-left: 10px;
+}
+summary:hover{
+    background-color: rgb(237, 247, 255);
+}
+.yes{
+    height: 100px;
+    width: 80%;
+    margin-left: 30px;
+    border-top: 1px solid  rgb(191, 194, 196);
+    cursor: pointer;
+}
+.yes button{
+    width: 60px;
+    height: 40px;
+    background-color: whitesmoke;
+    margin-bottom: 65px;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.yes button:hover{
+    background-color: rgb(197, 192, 192);
+}
+.bottom{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    margin-top: 10%;
+    height: 300px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.bottom1{
+    margin-top: -30px;
+}
+#property{
+    margin-left: 45%;
+    width: 240px;
+    height: 47px;
+    font-size: 20px;
+    background-color: #fff;
+    color: rgb(27, 110, 184);
+    border: 1px solid rgb(27, 110, 184);
+    margin-bottom: -100%;
+    border-radius: 5px;
+    margin-top: 90px;
+}
+#property:hover{
+    color: rgb(0, 177, 255);
+}
+.bottom2{
+    border: 4px solid rgb(14, 103, 181);
+    width: 100%;
+    height: 295px;
+    border-radius: 10px;
+    /* margin-left: 5%; */
+    /* margin-top: 40px; */
+}
+.bottom2 img{
+    margin-left: 85%;
+    margin-top: -2%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.bottom2 h5{
+    margin-left: 85%;
+    margin-top: -15%;
+    font-size: 18px;
+}
+.bottom2 p{
+    margin-left: 3%;
+    font-size: 18px;
+    margin-top: 3%;
+}
+#number{
+    font-size: 21px;
+    padding: 10px;
+    width: 25%;
+    margin-left: 50px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.bottom2 button{
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+    border: 0px;
+    color: #fff;
+    background-color: rgb(212, 33, 81);
+}
+.ul{
+    display: flex;
+    margin-left: 3%;
+    font-size: 22px;
+    gap: 20px;
+    margin-top:2%;
+    color: rgb(27, 46, 74);
+}
+.down1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.flexx{
+    display:inline-flex;
+    gap: 10px;
+    width: 90%;
+    height: 60px;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.flexx div{
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+}
+.flexx h2{
+    margin-top: 9px;
+    margin-right: 70px;
+}
+.flexx2{
+    display:inline-flex;
+    gap: 10px;
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+}
+.flexx2 div{
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+}
+.flexx2 h2{
+    margin-top: 9px;
+    margin-right: 70px;
+}
+.flexx3{
+    display:inline-flex;
+    gap: 10px;
+    width: 90%;
+    height: 70px;
+    margin-left: 5%;
+}
+.flexx3 div{
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+}
+.flexx3 h2{
+    margin-top: 9px;
+    margin-right: 70px;
+}
+.flexx4{
+    display:inline-flex;
+    gap: 10px;
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+}
+.flexx4 div{
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+}
+.flexx4 h2{
+    margin-top: 9px;
+    margin-right: 70px;
+}
+.flexx6{
+    width: 95%;
+    height: 80px;
+    margin:auto
+    
+}
+.flexx6 p{
+    font-size: 19px;
+    color: rgb(85, 81, 81);
+    margin-left: 30px;
+}

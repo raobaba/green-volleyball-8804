@@ -5,6 +5,7 @@
 }
 body{
     font-family:sans-serif;
+    
 }
 #navbar{
     display: flex;
@@ -30,7 +31,7 @@ body{
   color: rgb(0, 137, 133);
 }
 
-.dropdown {
+.dropdown{
   position: relative;
   display: inline-block;
   
@@ -62,13 +63,13 @@ body{
 
 .show {display: block;}
 
-img{
+.orbitz img{
     width: 250px;
     height: 40px;
     margin-right: -100px;
     margin-left: -60px;
     background-color: #fff;
-}
+} 
 a{
     text-decoration: none;
     color: #000;
@@ -106,13 +107,14 @@ h4 a:hover{
 }
 .footer{
    line-height: 2rem;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .footer p a{
     color: rgb(15, 168, 203);
 }
 .footer p a:hover{
     border-bottom: 3px rgb(0, 137, 133); 
+    
 }
 .footer-logo{
     width: 200px;
@@ -149,3 +151,7 @@ h4 a:hover{
     color: #fff;
 }
 
+
+
+
+  

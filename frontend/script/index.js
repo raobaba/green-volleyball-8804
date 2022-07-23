@@ -9,7 +9,6 @@ async function query() {
 
   console.log(data);
   append(data);
-  mySearchFunction(query);
 }
 
 let id;
@@ -36,8 +35,7 @@ function append(data) {
     div.setAttribute("class", "search_div");
 
     div.addEventListener("click", function () {
-      // localStorage.setItem("searchQuery", JSON.stringify(query));
-      document.getElementById("query").value = `${el.name}, ${el.city}`;
+      document.getElementById("query").value = `${el.name} - ${el.city}`;
       container.innerHTML = null;
     });
 
@@ -51,8 +49,30 @@ function append(data) {
 }
 
 let search = document.getElementById("search");
-search.addEventListener("click", mySearchFunction());
+search.addEventListener("click", setQueryLs);
 
-function mySearchFunction(query) {
-  localStorage.setItem("searchQuery", JSON.stringify(query));
+function setQueryLs() {
+  let query = document.getElementById("query").value;
+  query = query.split("-")[1];
+  let from = document.getElementById("date1").value;
+
+  let to = document.getElementById("date2").value;
+
+  let travelers = document.getElementById("travelers").value;
+
+  let searchData = new Data(query, from, to, travelers);
+  // console.log(searchData, "seach daqta");
+
+localStorage.setItem("searchQuery", JSON.stringify(searchData));
+
+  window.location.href = "hotel.html";
+}
+
+class Data {
+  constructor(query, from, to, travelers) {
+  this.query = query
+    this.from =from
+  this.to = to
+   this.travelers = travelers
+  }
 }

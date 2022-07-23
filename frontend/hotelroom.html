@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/fa650845c0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./css/hotelroom.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="maincontainer">
+        <!-- add function and redirect to previous page -->
+        <div id="topProp" onclick="hotelpage()"> <i class="fas fa-arrow-left"></i> &nbsp; See all properties</div>
+
+        <!-- for appending images -->
+        <div id="container">
+
+            <div id="imgDiv1">
+                <img id="hotimg"
+                    src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2a61cd38.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+                    alt="">
+            </div>
+            <div id="imgDiv2">
+                <img src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/5f07eb8c.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+                    alt="">
+            </div>
+            <div id="imgDiv3">
+                <img src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/56dc76f5.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+                    alt="">
+            </div>
+            <div id="imgDiv4">
+                <img src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/9b3e4816.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+                    alt="">
+            </div>
+            <div id="imgDiv5">
+                <img src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2f73ee10.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+                    alt="">
+            </div>
+        </div>
+        <!-- stick the div while scrolling add function -->
+        <div id="fix">
+            <div id="lists">
+                <div class="listed"><a href="#hotelSide"> Overview</div></a>
+                <div class="listed"><a href="#room_details"> Rooms</div></a>
+                <div class="listed"><a href="#geolocation"> Location</div></a>
+                <div class="listed"><a href="#amenities"> Amenities </div></a>
+                <div class="listed"><a href="#policies">Policies</div></a>
+                <div class="listed">Reviews</div>
+            </div>
+            <a href="#footer" id="reserve"><button style="cursor: pointer;">Reserve a room</button></a>
+        </div>
+        <!-- hotel details -->
+        <div id="overView">
+            <div id="hotelSide">
+                <div id="hotName" class="hotName">JW Marriott Mumbai Sahar</div>
+                <div id="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <div id="ratings" class="subHead">4.6/5 Wonderful</div>
+                <div class="small">Guests rated this property 4.7/5 for cleanliness.</div>
+                <div class="lynk">See all 454 reviews &nbsp;<i class="fas fa-chevron-right"></i></div>
+                <div class="subHead">Popular amenities</div>
+                <div id="subDiv1">
+                    <div id="col1">
+                        <div class="small"><i class="fas fa-hot-tub"></i> &nbsp; Hot Tub</div>
+                        <div class="small"><i class="fas fa-wifi"></i> &nbsp; Free Wifi</div>
+                        <div class="small"><i class="fas fa-snowflake"></i> &nbsp; Air conditioning</div>
+                    </div>
+                    <div id="col2">
+                        <div class="small"><i class="fas fa-parking"></i> &nbsp; Parking included</div>
+                        <div class="small"><i class="fas fa-tshirt"></i> &nbsp; Laundry</div>
+                        <div class="small"><i class="fas fa-spa"></i> &nbsp; Spa</div>
+                    </div>
+                </div>
+                <div class="lynk">See all &nbsp;<i class="fas fa-chevron-right"></i></div>
+                <div class="subHead">Cleaning and safety practices</div>
+                <div id="subDiv1">
+                    <div id="col1">
+                        <div class="small"><i class="fas fa-pump-soap"></i> &nbsp; Cleaned with disinfectant</div>
+                        <div class="small"><i class="fas fa-hands-wash"></i> &nbsp; Hand sanitizer provided</div>
+                    </div>
+                    <div id="col2">
+                        <div class="small"><i class="fas fa-people-arrows"></i>&nbsp; Social distancing</div>
+                    </div>
+                </div>
+                <div class="lynk">See all &nbsp;<i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div id="map">
+                <div>
+                    <img id="mapImg" src="https://i.stack.imgur.com/Y2kp2.png" alt="">
+                </div>
+                <div class="smallMap"> IA Project Road, Chhatrapati Shivaji Intl Airport, Mumbai, Maharashtra, 400099
+                </div>
+                <div class="lynkMap">View in a map &nbsp;<i class="fas fa-chevron-right"></i></div>
+                <div class="subHeadMap">Explore the area</div>
+                <div id="col2">
+                    <div class="smallOne"><i class="fas fa-map-marker-alt"></i> &nbsp; Mumbai (BOM-Chhatrapati &nbsp;
+                        &nbsp;
+                        &nbsp; &emsp;1 min drive</div>
+                    <div class="small"> &nbsp; Shivaji Intl.)</div>
+                    <div class="smallMap"><i class="fas fa-map-marker-alt"></i>&nbsp; MIDC Industrial Estate &nbsp;
+                        &nbsp;
+                        &nbsp; &emsp; &emsp; &emsp;4 min drive</div>
+                    <div class="smallMap"><i class="fas fa-map-marker-alt"></i>&nbsp; Phoenix Market City Mall&nbsp;
+                        &emsp;
+                        &emsp; &emsp;4 min drive</div>
+                    <div class="smallMap"><i class="fas fa-map-marker-alt"></i>&nbsp; Powai Lake &nbsp; &emsp; &emsp;
+                        &emsp;
+                        &emsp; &emsp; &emsp; &emsp; &emsp;7 min drive</div>
+                </div>
+            </div>
+
+        </div>
+        <div id="topHead">
+            <h2>Choose your room</h2>
+        </div>
+        <div id="searchContainer">
+            <div class="search-wrap">
+                <label class="far fa-calendar-check"> Check-in</label>
+                <div style="width: 100%" class="dateD" >
+                    <input type="date" id="checkindate" value="">
+                </div>
+            </div>
+            <div class="search-wrap">
+                <label class="far fa-calendar-check"> Check-out</label>
+                <div style="width: 100%" class="dateD">
+                    <input type="date"  id="checoutdate" value="25/07/2022">
+                </div>
+            </div>
+            <div class="search-wrap">
+                <label class="fas fa-map-marker-alt"> Travelers</label>
+                <select name="Sort by" style="width: 100%" id="sortBy">
+                    <option value="Mumbai">1 room, 1 travelers </option>
+                    <option value="Mumbai">2 room, 2 travelers </option>
+                    <option value="Mumbai">3 room, 6 travelers </option>
+                </select>
+            </div>
+            <div id="checkRates">
+                <div>Check Rates</div>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <div id="room_details">
+            <!-- <div id="room_detailsimg">
+                <img src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2d4614d2.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+                    alt="">
+            </div> -->
+            <!-- <div id="room_detailstype">
+                <h2>Standard Room, 1 King Bed, Non Smoking</h2>
+                <p>344 sq ft</p>
+                <p>Sleeps 3</p>
+                <p>1 King Bed</p>
+            </div> -->
+            <!-- <div id="pricestandard">
+                <div id="pricebutton">
+                    <a href="#footer"><button id="onclick1"  >Select a Room</button></a>
+                </div>
+            </div> -->
+        </div>
+        <div id="roomList">
+
+        </div>
+
+        <!-- geolocation -->
+        <div id="geolocation">
+            <!-- append all the details regarding the location -->
+            <div id="geo">
+                <h2>About this area</h2>
+                <p>Near a metro station, Holiday Inn New Delhi International Airport, an IHG Hotel is in Aerocity, a
+                    neighborhood in New Delhi with good airport proximity. Qutub Minar is a notable landmark, and
+                    travelers looking to shop may want to visit Worldmark and DLF Emporio Vasant Kunj. Traveling with
+                    kids? Consider Delhi National Railway Museum and Dilli Haat. Spend some time exploring the area's
+                    activities, including golfing, game drives, and outlet shopping. Guests appreciate the hotel's
+                    convenience to public transportation: Delhi Aero City Station is 5 minutes by foot.
+
+                </p>
+            </div>
+            <div id="bigmap">
+                <div>
+                    <img src="https://i.stack.imgur.com/Y2kp2.png" alt="">
+                </div>
+                <div class="bigmapoclass">
+                    <h2>Whats nearby</h2>
+                    <p>Central Mall - 12 min walk</p>
+                    <p>Ayyappa Temple - 22 min drive</p>
+                    <p>DLF Promenade Vasant Kunj - 24 min drive</p>
+                    <p>DLF Emporio Vasant Kunj - 25 min drive</p>
+
+                </div>
+                <div  class="bigmapoclass">
+                    <h2>Getting around</h2>
+                    <p> Bijwasan Station - 10 min drive</p>
+                    <p> Aero City Station - 12 min walk</p>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <!-- ame -->
+        <div id="amenities">
+            <!-- append all the aminites -->
+            <div class="amenities1">
+                <div>
+                    <h2>About this Property</h2>
+                </div>
+                <div>
+                    <h2 class="hotelName">Radisson Blu Plaza Delhi Airport</h2>
+                    <p>
+                        Catch some rays at the beach or spend the day relaxing at this hotel, a Luxury Collection
+                        Resort & Spa, Goa's full-service spa. Then enjoy a meal at one of the resort's 5 restaurants.
+                    </p>
+                    <h2>Languages</h2>
+                    <p>English, Hindi, Russian</p>
+                </div>
+            </div>
+            <hr>
+            <div class="amenities1">
+                <div>
+                    <h2>Cleaning and safety practices</h2>
+                </div>
+                <div>
+                    <h2>Enhanced cleanliness measures</h2>
+                    <p>Disinfectant is used to clean the property</p>
+                    <p>High-touch surfaces are cleaned and disinfected</p>
+                    <h2>Social distancing</h2>
+                    <p>Contactless check-in and check-out</p>
+                    <p> Cashless transactions are available for all charges at the property</p>
+                    <p> Protective shields in place at main contact areas</p>
+                    <p> Social distancing measures in place</p>
+                    <p> Contactless room service is available</p>
+
+                    <h2>Safety measures</h2>
+                    <p>Personal protective equipment worn by staff</p>
+                    <p>Temperature checks given to staff</p>
+                    <p>Temperature checks available for guests</p>
+                    <p>Masks and gloves available</p>
+                    <p>Masks are required at the property</p>
+                    <p>Hand sanitizer provided</p>
+                    <p>Enhanced food service safety measures are in place</p>
+
+                </div>
+            </div>
+            <hr>
+            <div id="amenities1">
+                <div id="amenities1pop">
+                    <h2>Property amenities</h2>
+                </div>
+                <div id="amenities1pop1">
+                    <div>
+                        <div>
+
+                            <h2>Parking and transportation</h2>
+                            <p>Free secured self parking on site</p>
+                            <p>Free secured valet parking on site</p>
+                            <p>Wheelchair-accessible parking and van parking available</p>
+                            <p>Limo/town car service</p>
+                        </div>
+                        <div>
+
+                            <h2>Food and drink </h2>
+                            <p>5 restaurants</p>
+                            <p>24-hour room service</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+
+                            <h2>Business services</h2>
+                            <p>Business center</p>
+                            <p>Computer station</p>
+                            <p>Conference space (13368 square feet)</p>
+                            <p> Meeting rooms - 9</p>
+
+                        </div>
+                        <div>
+
+                            <h2></h2>
+
+                        </div>
+                        <div>
+
+                            <h2>Outdoors</h2>
+                            <p>BBQ grill(s)</p>
+                            <p>Beach loungers</p>
+                            <p>Beach umbrellas</p>
+                            <p>Pool sun loungers</p>
+                            <p> Pool umbrellas</p>
+
+                        </div>
+                        <div>
+
+                            <h2>Accessibility</h2>
+                            <p>Accessible bathroom (select rooms)</p>
+                            <p>Grab bar in shower</p>
+                            <p>Wheelchair-accessible pool</p>
+                            <p>Wheelchairs available on site</p>
+
+                        </div>
+                        <div>
+
+                            <h2>More</h2>
+                            <p>Beach towels</p>
+                            <p>Couples dining</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="policies">
+            <div id="leftpolicies">
+                <h1>Policies</h1>
+            </div>
+            <div id="rightpolicies">
+                <div id="policiesdetails">
+                    <div id="checkintime">
+                        <h2>Check-in</h2>
+                        <p>Check-in from 3:00 PM - 11:00 AM</p>
+                        <p>Early check-in subject to availability</p>
+                        <p>Early check-in is available for a fee (amount varies)</p>
+                        <p>Late check-in subject to availability</p>
+                        <p>Minimum check-in age - 18</p>
+                    </div>
+                    <div id="checouttime">
+                        <h2>Check-out</h2>
+                        <p>Check-out before noon</p>
+                        <p>Late check-out subject to availability</p>
+                        <p>A late check-out fee will be charged</p>
+                    </div>
+                </div>
+                <div id="special">
+                    <h2>Special check-in instructions</h2>
+                    <p>Guests must contact the property in advance for check-in instructions; front desk staff will
+                        greet guests on arrival</p>
+                    <p>To make arrangements for check-in please contact the property at least 24 hours before arrival
+                        using the information on the booking confirmation</p>
+                    <p>For more details, please contact the property using the information on the booking confirmation
+                    </p>
+                </div>
+                <div id="acc">
+                    <h2>Access methods</h2>
+                    <p>Staffed front desk</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer_main"></div>
+    <div id="end"></div>
+    <div id="sing"></div>
+    <script src="./script/hotelroom.js"></script>
+    <script src="script/navbar.js" type="module"></script>
+
+
+</body>
+
+
+</html>

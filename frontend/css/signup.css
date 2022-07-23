@@ -1,3 +1,9 @@
+ /* *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }  */
+
 #registNav{
     width: 100%;
     margin-top: -7px;
@@ -28,7 +34,10 @@ hr{
     border: none;
 }
 #registration{
-    margin-left: 470px;
+      margin:auto; 
+    width: 420px;
+    height: 700px;
+    /* border: 1px solid black; */
 }
 #email,#first,#last,#password{
     width: 400px;

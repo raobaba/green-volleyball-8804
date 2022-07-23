@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.main_div{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+
+.images_inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: max-content;
+    max-width: max-content;
+    text-align: center;
+}
+.images_inner h1{
+    color: whitesmoke;
+    font-size: 47px;
+    margin-top: 0;
+
+}
+.images_inner p{
+    font-size: 26px;
+    max-width: 650px;
+    margin: 10px auto;
+    text-align: center;
+    text-shadow: 0.02em 0.02em 3px rgb(0 0 0 / 60%);
+    color: whitesmoke;
+}
+
+.images_inner button{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 26px;
+    background-color: #88BE00;
+    padding: 0.5em 2em;
+    display: inline-block;
+    border-radius: 5px;
+    color: #000;
+}
+
+.images{
+    width: 100%;
+   height: 50vh;
+   /* object-fit: cover; */
+   overflow: hidden;
+   
+   
+}
+.news{
+ 
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+}
+
+.news div{
+   
+    width: 40%;
+    line-height: 2rem;
+}
+.news2{
+    text-align-last: right;
+}
+
+
+.container{
+  
+   height: 200px;
+   width: 80%;
+   margin: auto;
+   margin-top: 40px;
+   display: flex;
+   border-bottom: 1px solid gray;
+   margin-bottom: 40px;
+}
+.container div:nth-child(1){
+
+    
+    height: 180px;
+    width: 28%;
+    margin: auto;
+
+}
+.container div:nth-child(2){
+
+    
+    height: 180px;
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.container div:nth-child(2) h2{
+    margin-bottom: 20px;
+}
+
+
+img{
+    width: 100%;
+    height: 180px;
+}
+
+
+
+.fast_facts1{
+ /* border: 1px solid; */
+ height: 50px;
+ margin: auto;
+ text-align: center;
+ margin-bottom: 50px;
+ width: 80%;
+ overflow: hidden;
+   
+
+}
+.fast_facts2{
+
+ display: flex;
+ width: 80%;
+ margin: auto;
+ text-align: center;
+
+}
+.fast_facts2 div{
+margin: auto;
+width: 18%;
+height: 200px;
+margin-bottom: 100px;
+overflow: hidden;
+   
+
+ 
+}
+p{
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+
+.tweets{
+
+ text-align: center;
+ border-bottom: 5px solid rgb(41, 41, 148);
+ width: 80%;
+ margin: auto;
+ line-height: 3rem;
+
+   
+}
+
+
+.media{
+    height: 1000px;
+    background-color: rgb(235,242,248);
+    margin-top: 2rem;
+}
+.media1{
+    height: 200px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 2rem;
+  
+   
+    
+}
+.logo{
+   
+    height: 250px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+.logo div{
+    border: 1px solid black;
+    height: 230px;
+    width: 18%;
+    margin: auto;
+ 
+
+
+}
+
+#logo1 >img{
+    height: 230px; 
+}
+
+.Orbitz{
+   
+    width: 80%;
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    
+
+}
+
+.Orbitz1{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+
+}

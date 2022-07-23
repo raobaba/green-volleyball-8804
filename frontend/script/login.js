@@ -6,6 +6,7 @@ togglePassword.addEventListener("click", function (e) {
   password.setAttribute("type", type);
   this.classList.toggle("fa-eye-slash");
 });
+
 function myFunction() {
   var checkBox = document.getElementById("myCheck");
   var text = document.getElementById("text");
@@ -17,7 +18,6 @@ function myFunction() {
 }
 
 var regdUsers = JSON.parse(localStorage.getItem("user"));
-//   console.log(regdUsers);
 
 let loginFun = () => {
   var enteremail = document.querySelector("#email").value;
@@ -27,20 +27,20 @@ let loginFun = () => {
   if (regdUsers === null) {
     alert("User doesn't Exists,SignUp First !");
     window.location.href = "signup.html";
-  } else {
-    // console.log(regdUsers);
-    if (regdUsers.email === enteremail && regdUsers.password === enterpass) {
-      alert("You have successfully loged in!");
-      return false;
-    } else if (
-      regdUsers.email === enteremail &&
-      regdUsers.password !== enterpass
-    ) {
-      alert("Wrong credentials");
-    } else {
-      alert("User doesn't exist, Sign Up");
-      window.location.href = "signup.html";
-    }
+    return;
+  }
+
+  let isUSerrExist = regdUsers.find(
+    (elem) => elem.email === enteremail && elem.password === enterpass
+  );
+  if (!isUSerrExist) return alert("User Doesn't Exist");
+  else {
+    localStorage.setItem(
+      "isAuth",
+      JSON.stringify({ logged: true, userName: isUSerrExist?.first })
+    );
+    alert("You have successfully logged in.");
+    window.location.href = "index.html";
   }
 };
 document.getElementById("continue").addEventListener("click", loginFun);
