@@ -5,7 +5,7 @@ let navbar = () => {
    
    </div>
     <div class="dropdown">
-        <button id="bt" class="dropbtn">More teavel</button>
+        <button id="bt" class="dropbtn">More travels</button>
         <div id="myDropdown" class="dropdown-content">
         <a href="#"> 
             <div class="dis_flex">
@@ -47,7 +47,7 @@ let navbar = () => {
             </div>
             <br>
             <div class="dis_flex">
-            <a href="#">Group & meeting</a>
+            <a href="flip.html">Group & meeting</a>
             </div>
             <br>
             <div class="dis_flex">
@@ -86,7 +86,7 @@ let footer_main = () => {
     <div class="footer">
         <h3>Company</h3>
         <p> <a href="https://www.orbitz.com/lp/b/about">About</a></p>
-        <p> <a href="https://careers.expediagroup.com/">Jobs</a> </p>
+        <p> <a href="career.html">Jobs</a> </p>
         <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">List your property</a></p>
         <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Partnerships</a></p>
         <p> <a href="./press.html">Newsroom</a></p>

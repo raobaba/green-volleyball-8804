@@ -20,14 +20,14 @@ body {
   height: auto;
   gap: 10px;
 }
-#box {
+#dbox {
   width: 75%;
   height: auto;
 
   gap: 10px;
 }
 
-#box > div {
+#dbox > div {
   margin-top: 20px;
   background-color: white;
 }

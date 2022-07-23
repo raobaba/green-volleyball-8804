@@ -2,6 +2,8 @@ let hotelData = [];
 
 let query = JSON.parse(localStorage.getItem("searchQuery"));
 let searchQuery = query.query;
+console.log(searchQuery)
+
 
 const url = `https://orbitz-ujjawal-api.herokuapp.com/hotels?q=${
   searchQuery ? searchQuery : "mumbai"
@@ -11,8 +13,10 @@ async function getData() {
   try {
     let res = await fetch(url);
     let data = await res.json();
+    console.log(data)
     append(data);
     hotelData = data;
+
   } catch (err) {
     console.log(err);
   }
@@ -21,7 +25,7 @@ async function getData() {
 getData();
 
 function append(data) {
-  let box = document.getElementById("box");
+  let box = document.getElementById("dbox");
   box.innerHTML = null;
 
   data.forEach(function (el) {
@@ -64,7 +68,7 @@ function append(data) {
 
     div1.setAttribute("class", "dimage");
     div2.setAttribute("class", "details");
-    document.querySelector("#box").append(div);
+    document.querySelector("#dbox").append(div);
     div.append(div1, div2);
     div1.append(image);
     div2.append(hotel, refund, reserve, price, left, ratingWord, rating);
