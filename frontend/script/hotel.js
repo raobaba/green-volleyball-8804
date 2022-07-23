@@ -1,9 +1,10 @@
 let hotelData = [];
 
 let query = JSON.parse(localStorage.getItem("searchQuery"));
+let searchQuery = query.query
 
 const url = `https://orbitz-ujjawal-api.herokuapp.com/hotels?q=${
-  query ? query : "mumbai"
+  searchQuery ? searchQuery : "mumbai"
 }`;
 
 async function getData() {

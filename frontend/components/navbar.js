@@ -86,7 +86,7 @@ let footer_main = () => {
         <p> <a href="https://careers.expediagroup.com/">Jobs</a> </p>
         <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">List your property</a></p>
         <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Partnerships</a></p>
-        <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Newsroom</a></p>
+        <p> <a href="./press.html">Newsroom</a></p>
         <p>  <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investors</a></p>
         <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Site Map</a></p>
         <p> <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Orbitz Reward</a></p>
