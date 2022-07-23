@@ -3,7 +3,7 @@ let url = `https://orbitz-ujjawal-api.herokuapp.com/rooms`
 fetch(url).then(function (res) {
     return res.json();
 }).then(function (data) {
-    console.log(data)
+    // console.log(data)
     createRoom(data)
 
 }).catch(function (err) {
@@ -146,7 +146,7 @@ let createRoom = (Data) => {
 
             let roomdatalocal = localStorage.setItem("localdataroom", JSON.stringify(elem))
             // roomlocal.push(roomdatalocal)
-            console.log(roomdatalocal)
+            // console.log(roomdatalocal)
             window.location.href = "payment.html";
         });
         //---------------------------------------------------
@@ -190,15 +190,17 @@ let createRoom = (Data) => {
 // var local=localStorage.setItem("nitesh",JSON.stringify(arr))
 
 let Ldata =JSON.parse(localStorage.getItem("hoteldata"))
-console.log(Ldata)
+// console.log(Ldata)
 arrayl=[]
 arrayl.push(Ldata)
-console.log(arrayl)
+// console.log(arrayl)
 let nameappend = (arrayl) => {
     let name = document.querySelector(".hotName")
+    let name1=document.querySelector(".hotelName")
     arrayl.forEach(el => {
         
         name.innerHTML = el.hotelName
+        name1.innerHTML=el.hotelName
         let img = document.querySelector("#hotimg")
         img.src = el.imgSrc
         let rating = document.querySelector("#ratings")
@@ -206,26 +208,28 @@ let nameappend = (arrayl) => {
         let price = document.querySelector("#pricestandard")
         // price.innerText=`$ ${el.price}`;
 
-
-
-
     });
 }
 nameappend(arrayl)
+let datecheck=JSON.parse(localStorage.getItem("searchQuery"))
+let arrdate=[]
+arrdate.push(datecheck) 
+console.log(datecheck)
+let adddate=(arrdate)=>{
+    // checkin=document.querySelector("#checkindate")
+    let  checkin=document.querySelector('input[type="date"]')
 
+    // console.log(checkin)
+    let checkout=document.querySelector(`input[type="date"]`)
+    arrdate.forEach(e=>{
+        // console.log(typeof e.from)
+        checkin.value=e.from
+        // checkout.innerHTML=e.to
+      
 
-// let onclick11 = document.getElementById("onclick1")
-// onclick11.addEventListener("click", onclick12)
-
-// function onclick12() {
-//     console.log("hello")
-//     location.href = "#maindiv"
-// }
-
-
-
-// let dataasa=(localStorage.getItem("nitesh"));
-// console.log("hello"+dataasa)
+    })
+}
+adddate(arrdate)
 
 function hotelpage(){
     window.location.href="hotel.html"

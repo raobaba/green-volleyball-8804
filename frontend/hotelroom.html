@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./css/hotelroom.css">
     <link rel="stylesheet" href="./css/navbar.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,13 +20,14 @@
 
     <div id="maincontainer">
         <!-- add function and redirect to previous page -->
-        <div id="topProp" onclick="hotelpage()" > <i class="fas fa-arrow-left"></i> &nbsp; See all properties</div>
+        <div id="topProp" onclick="hotelpage()"> <i class="fas fa-arrow-left"></i> &nbsp; See all properties</div>
 
         <!-- for appending images -->
         <div id="container">
 
             <div id="imgDiv1">
-                <img id="hotimg" src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2a61cd38.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+                <img id="hotimg"
+                    src="https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2a61cd38.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
                     alt="">
             </div>
             <div id="imgDiv2">
@@ -125,21 +126,21 @@
         <div id="searchContainer">
             <div class="search-wrap">
                 <label class="far fa-calendar-check"> Check-in</label>
-                <div style="width: 100%" class="dateD">
-                    <input type="date" placeholder="Feb 2">
+                <div style="width: 100%" class="dateD" >
+                    <input type="date" id="checkindate" value="">
                 </div>
             </div>
             <div class="search-wrap">
                 <label class="far fa-calendar-check"> Check-out</label>
                 <div style="width: 100%" class="dateD">
-                    <input type="date" placeholder="Feb 2">
+                    <input type="date"  id="checoutdate" value="25/07/2022">
                 </div>
             </div>
             <div class="search-wrap">
                 <label class="fas fa-map-marker-alt"> Travelers</label>
                 <select name="Sort by" style="width: 100%" id="sortBy">
-                    <option value="Mumbai">1 room, 2 travelers </option>
-                    <option value="Mumbai">2 room, 4 travelers </option>
+                    <option value="Mumbai">1 room, 1 travelers </option>
+                    <option value="Mumbai">2 room, 2 travelers </option>
                     <option value="Mumbai">3 room, 6 travelers </option>
                 </select>
             </div>
@@ -185,10 +186,9 @@
             </div>
             <div id="bigmap">
                 <div>
-                    <img src="https://i.stack.imgur.com/Y2kp2.png"
-                        alt="">
+                    <img src="https://i.stack.imgur.com/Y2kp2.png" alt="">
                 </div>
-                <div>
+                <div class="bigmapoclass">
                     <h2>Whats nearby</h2>
                     <p>Central Mall - 12 min walk</p>
                     <p>Ayyappa Temple - 22 min drive</p>
@@ -196,7 +196,7 @@
                     <p>DLF Emporio Vasant Kunj - 25 min drive</p>
 
                 </div>
-                <div>
+                <div  class="bigmapoclass">
                     <h2>Getting around</h2>
                     <p> Bijwasan Station - 10 min drive</p>
                     <p> Aero City Station - 12 min walk</p>
@@ -213,8 +213,9 @@
                     <h2>About this Property</h2>
                 </div>
                 <div>
-                    <h2 class="hotName">Radisson Blu Plaza Delhi Airport</h2>
-                    <p>Catch some rays at the beach or spend the day relaxing at ITC Grand Goa, a Luxury Collection
+                    <h2 class="hotelName">Radisson Blu Plaza Delhi Airport</h2>
+                    <p>
+                        Catch some rays at the beach or spend the day relaxing at this hotel, a Luxury Collection
                         Resort & Spa, Goa's full-service spa. Then enjoy a meal at one of the resort's 5 restaurants.
                     </p>
                     <h2>Languages</h2>
@@ -341,9 +342,12 @@
                 </div>
                 <div id="special">
                     <h2>Special check-in instructions</h2>
-                    <p>Guests must contact the property in advance for check-in instructions; front desk staff will greet guests on arrival</p>
-                    <p>To make arrangements for check-in please contact the property at least 24 hours before arrival using the information on the booking confirmation</p>
-                    <p>For more details, please contact the property using the information on the booking confirmation</p>
+                    <p>Guests must contact the property in advance for check-in instructions; front desk staff will
+                        greet guests on arrival</p>
+                    <p>To make arrangements for check-in please contact the property at least 24 hours before arrival
+                        using the information on the booking confirmation</p>
+                    <p>For more details, please contact the property using the information on the booking confirmation
+                    </p>
                 </div>
                 <div id="acc">
                     <h2>Access methods</h2>
