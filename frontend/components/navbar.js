@@ -1,3 +1,4 @@
+const isAuth = JSON.parse(localStorage.getItem("isAuth"));
 let navbar = () => {
   return `
    <div class="orbitz"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Orbitz_logo.svg/1024px-Orbitz_logo.svg.png" alt="">
@@ -68,7 +69,9 @@ let navbar = () => {
         <a href="">Trips</a>
     </h4>
     <h4>
-        <a href="signup.html">Sign in</a>
+        <a href="signup.html" >${
+          isAuth?.logged ? isAuth?.userName : "Sign In"
+        }</a>
     </h4>
     
     `;
